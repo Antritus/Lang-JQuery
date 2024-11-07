@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  position: relative; /* Needed to contain the absolutely positioned menu */
+}
+
+.menu-container {
+  position: absolute; /* Positions it absolutely within the .container */
+  top: 0;
+  left: 0;
+  width: 8vw; /* 15% of the viewport width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.menu-container #menu-hide, #menu-reveal {
+  padding: 16px 12px;
+  text-align: center;
+  background-color: #99ff8f;
+
+}
+
+.menu-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%; /* Full width of the .menu-container */
+  height: 30vh; /* Only 30% of the viewport height */
+  background: #ffe373;
+}
+
+.menu-button {
+  padding: 15px 0;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+/* Specific styling for the first menu button */
+.menu-button:first-child {
+  padding-top: 20px;
+}

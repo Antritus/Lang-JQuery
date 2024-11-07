@@ -1,0 +1,103 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HIENO JQUERY SIVU</title>
+  <link rel="stylesheet" href="css/menu.css">
+
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".container").draggable();
+
+      // Reveal MENU
+      $("#menu-reveal").click(function(){
+        $("#menu-reveal").hide();
+        $("#menu-hide").show();
+        $(".menu-elements").slideToggle();
+      });
+
+      // Hide Menu
+      $("#menu-hide").click(function(){
+        $("#menu-reveal").show();
+        $("#menu-hide").hide();
+        $(".menu-elements").slideToggle();
+      }).ready(function(){
+        // Hide menu from startup
+        $(".menu-elements").hide();
+        $("#menu-hide").hide();
+      });
+
+      // Buttons for menu
+      $("#tekstia").click(function (){
+        $.ajax({
+          url : "tekstia.txt",
+          dataType: "text",
+          success : function (data) {
+            $("#paste").html(data);
+          }
+        });
+      })
+      $("#tekstia-ei-html").click(function (){
+        $.ajax({
+          url : "tekstia-ei-html.txt",
+          dataType: "text",
+          success : function (data) {
+            $("#paste").html(data);
+          }
+        });
+      })
+      $("#html-elementti").click(function (){
+        $.ajax({
+          url : "page2.html",
+          dataType: "text",
+          success : function (data) {
+            $("#paste").html(data);
+          }
+        });
+      })
+      $("#kuva").click(function() {
+        $("#paste").html('<img src="kuva.jpg" alt="Kissa" />');
+      });
+
+    });
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="menu-container">
+      <div id="menu-reveal">
+        REVEAL MENU
+      </div>
+      <div id="menu-hide">
+        HIDE MENU
+      </div>
+
+      <div class="menu-elements">
+
+        <div class="menu-button" id="tekstia">
+          TEKSTI FORMAATILLA TIEDOSTO
+        </div>
+        <div class="menu-button" id="tekstia-ei-html">
+          TÄYSI TEKSTI TIEDOSTO
+        </div>
+        <div class="menu-button" id="html-elementti">
+          HTML ELEMENTTI
+        </div>
+        <div class="menu-button" id="kuva">
+          KUVA
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="paste">
+  </div>
+</body>
+
+</html>

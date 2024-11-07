@@ -1,0 +1,44 @@
+<style>
+  * {
+  color: PINK;
+  }
+</style>
+<h1>AAAAA</h1>
+<b>BANAANI</b>
+<p>TEKSTI</p>
+<h1>AAAAA</h1>
+<b>BANAANI</b>
+<p>TEKSTI</p>
+<h1>AAAAA</h1>
+<b>BANAANI</b>
+<p>TEKSTI</p>
+<h1>AAAAA</h1>
+<b>BANAANI</b>
+<p>TEKSTI</p>
+<h1>AAAAA</h1>
+<b>BANAANI</b>
+<p>TEKSTI</p>
+<h1>AAAAA</h1>
+<b>BANAANI</b>
+<p>TEKSTI</p>
+<h1>AAAAA</h1>
+<b>BANAANI</b>
+<p>TEKSTI</p>
+<h1>AAAAA</h1>
+<b>BANAANI</b>
+<p>TEKSTI</p>
+<h1>AAAAA</h1>
+<b>BANAANI</b>
+<p>TEKSTI</p>
+<h1>AAAAA</h1>
+<b>BANAANI</b>
+<p>TEKSTI</p>
+<h1>AAAAA</h1>
+<b>BANAANI</b>
+<p>TEKSTI</p>
+<h1>AAAAA</h1>
+<b>BANAANI</b>
+<p>TEKSTI</p>
+<h1>AAAAA</h1>
+<b>BANAANI</b>
+<p>TEKSTI</p>
